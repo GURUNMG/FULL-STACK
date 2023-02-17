@@ -1,0 +1,70 @@
+console.log() it used to print the statemets inside it
+like string, int, float, double
+
+like python we can create a variable in same data type
+
+once we declared a variable using var we can redeclare it using the 
+var with same variable name
+
+but if we declared the variable with "let" we cannot redeclare it with same variable name
+
+const once we declared a variable we cannot redeclare it and we cannot re-assign the variable
+g=0
+const g=9
+console.log(g) => it will give error
+
+we can re assign the variable with any data type to other data type
+PREFERABLE DECLARATION IS "let"
+
+In javascript number is stored as 64 bit
+
+TYPES OF DATA TYPES:
+1. Boolean => a=true  (true, false)
+2. String => a="GURUBHARAN N M"
+3. Object => a={name:"GURUBHARAN N M",age:20, dep:"CSE"}
+to access the specific key => a.name will give GURUBHARN N M will be printed
+4. Array can hold any data type, no need of having a specific memory size
+to add the element at the end of an Array we need to use push() function
+
+example: a=[1,2,3,4,5]
+
+let a=[1,2,3,4,5,6];
+a.push(55);
+console.log(a);
+
+IF ELSE (==) does not consider the data type of the left and right
+but (===) considers the data type of the left ans right
+
+FUNCTIONS:
+
+
+ARROW FUNCTIONS
+const sum=(user)=>{
+  console.log(user);
+}
+
+a={
+  name:"GURUBHARAN N M",
+  age:18,
+  dep:"CSE"
+}
+sum(a.name);
+
+REPL =>
+R => READ
+E => EVALUATE 
+P => PRINT
+L => LOOP
+
+class and constructor ... parameterized constructor
+class Color
+{
+  constructor(name, code)
+  {
+    this.name=name;
+    this.code=code;
+  }
+}
+
+let blackColor=new Color("black","#000000");
+console.log(blackColor);

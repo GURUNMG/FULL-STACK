@@ -1,0 +1,44 @@
+Types of database
+
+Distributed database
+Centralization database
+Relational database
+Graph database
+NoSQL database
+Cloud database
+
+Entity => Represented as rectangle
+Weak Entity => Represented as double rectangle
+
+arrtibutes => Information about the entity, it will be represented as Eclipse(Oval)
+id => unique (Primary key)
+
+derived attributes => dotted Oval
+composite attribute => 
+multivalued attribute =>
+
+RELATIONSHIPS:
+one to many relationships:
+  Students can register in multiple courses
+many to many relationships:
+  Multiple courses can be registerd by multiple students
+one to one relationships:
+
+
+primary key => it has unique values with data as not null, 
+  table column can be represented using primary key
+
+candidate key => it has unique values but it is not set as primary key 
+example: username
+primary key is set using email
+
+super key => candidate key's subset ....
+
+foreign key => one tables primary key is used as column in another table;
+
+
+atomicity => details is not saved in the server but the website acknowledged as it is saved
+consistency => correctness
+
+In relational database we cannot store hirerarical data;
+In non relational database (example:mongodb) we can store hirerarical datal;

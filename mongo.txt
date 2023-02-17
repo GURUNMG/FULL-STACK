@@ -1,0 +1,57 @@
+4 types of nosql
+1. GRAPH =>  nodes and data
+2. Key value pairs
+3. document
+4. column => each column will have different rows;
+
+In MONGODB acid property is available
+tables are denoted as collections in mongodb
+
+starting cmd => type mongod to check whether mongodb is perfectly installed
+type in cmd=> mongosh
+
+
+test> ... prompt will appear
+
+To view all the database available in MONGODB
+=> show dbs or show databases
+
+To create a new database
+=> use database_name => that you need to create
+
+To create a collection 
+=> db.createCollection("collection_name")
+atleast one document must be added to view in UI 
+
+To insertOne value
+=>db.collection_name.insertOne({name:"guru"})
+db.details.insertOne({name:"gurubharan", dep:"CSE", age:18, lab:"AI"});
+details is collection name
+
+=>Find
+g.find() => it prints all the documents available in the collection with all key value
+pairs   this only prints the name is collection
+
+g.find({},{_id:0,name:1})
+here (_id:0) so _id will not be displayed while using find, where (_id is the default)
+attribute we need to specify the (_id not to display)
+
+g.find({},{name:0}) it shows all the documents in the collection without including
+the name key
+
+g.find({},{}) first {} is to select all the documents in the collection 
+g.find({name:"gurubharan"}) it shows only the document which is having name as gurubharan
+likewise we can use any key value pairs to perfectly pick the required document
+
+g.find({age:{$gt:20}})
+it show the document whose age is greater than 20
+$gte => for greater than or equal to
+$lt => for less than 
+$lte => for less than or equal to
+
+g.find({dep:"CSE",age:{$gt:20}});
+it an (AND) operation it shows the documents with valus CSE and age > 20
+
+$set used to set the value or it will update the value of the key
+To update a value in existing document;
+a.updateOne({name:"gurubharan"},{$set:{age:20}});
