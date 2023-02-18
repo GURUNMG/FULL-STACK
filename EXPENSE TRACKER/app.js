@@ -23,9 +23,53 @@ const expenses=[
   {id:3, name:"COMPETITION", amount:300, desc:"INTER CLG"}
 ]
 
+const expense_Details=[
+  {id:1, paymentMode:'UPI'},
+  {id:2, paymentMode:"CASH"},
+  {id:3, paymentMode:"NETBANKING"}
+]
+
 // to get all the expenses from the server by the user
 app.get("/api/v1/expenses", (req, res)=>{
   res.send(expenses)
+})
+
+// to know the specific expense done by the user
+// http://localhost:3000/api/v1/expense/1 this will give the id value as 1
+app.get("/api/v1/expense/:id", (req, res)=>{
+  for( i=0; i<3; i++)
+  {
+    if(expenses[i].id==req.params.id)
+    {
+      res.status(200).json(expenses[i])
+      // res.send(expenses[i])
+    }
+  }  
+  // res.send("working") one route should have one respond
+})
+
+app.get("/api/v1/expensedetail/:id",(req,res)=>{
+  result={}
+  for(i=0; i<expenses.length; i++)
+  {
+    if(expenses[i].id==(req.params.id))
+    {
+      result={
+        id:expenses[i].id,
+        name:expenses[i].name,
+        amount:expenses[i].amount,
+        desc:expenses[i].desc,
+        paymentMode:expense_Details[i].paymentMode
+      }
+      // result["id"]=expenses[i].id
+      // result["name"]=expenses[i].name
+      // result["amount"]=expenses[i].amount
+      // result["desc"]=expenses[i].desc
+      // result["paymentMode"]=expense_Details[i].paymentMode
+      res.send(result)
+    }
+    
+  }
 })
 
 app.listen(port, ()=>{
