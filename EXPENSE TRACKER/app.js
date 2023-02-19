@@ -1,6 +1,9 @@
 const express= require('express')
+const bodyParser=require('body-parser')
 
 const app=express()
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
 const port=3000
 
 // app.get('/', (req, res)=>{
@@ -68,10 +71,54 @@ app.get("/api/v1/expensedetail/:id",(req,res)=>{
       // result["paymentMode"]=expense_Details[i].paymentMode
       res.send(result)
     }
-    
   }
+})
+
+app.post('/api/v1/expenses', (req,res)=>{
+    let new_expense=req.body
+    len=expenses.length
+
+    new_expense.id=expenses[len-1].id+1
+    let store_Expense={
+      id:expenses[len-1].id+1,
+      name:new_expense.name,
+      amount:new_expense.amount,
+      desc:new_expense.desc
+    }
+    // new_expense_Details.id=expense_Details[len-1].id+1
+
+    // expenses[len]=new_expense
+    expenses[len]=store_Expense
+    let new_expense_details={
+      id:expenses[len-1].id+1,
+      paymentMode:new_expense.paymentMode
+    }
+    expense_Details[len]=new_expense_details
+
+    // new_expense_details={
+    //   id:new_expense.id,
+    //   paymentMode:new_expense.paymentMode
+    // }
+
+    // expense_Details.paymentMode=req.body.paymentMode;
+    console.log(req.body)
+    console.log(new_expense_details)
+    res.send(expense_Details)
+})
+
+// DELETE
+app.delete('/api/v1/expense/:id',(req, res)=>{
+  for(let i=0; i<expenses.length; i++)
+  {
+    if (expenses.id==req.params.id)
+    {
+      expenses.splice(i,1)
+    }
+  }
+  res.send("DELETED")
 })
 
 app.listen(port, ()=>{
   console.log("Server is running on port number",port);
 })
+
