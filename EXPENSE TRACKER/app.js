@@ -118,6 +118,17 @@ app.delete('/api/v1/expense/:id',(req, res)=>{
   res.send("DELETED")
 })
 
+// UPDATE
+app.put("/api/v1/expense/:id", (req,res)=>{
+  for(let i=0; i<expenses.length; i++)
+  {
+    if(expenses[i].id==req.params.id)
+    {
+      expenses[i].amount=req.body.amount
+      res.send("AMOUNT UPDATED")
+    }
+  }
+})
 app.listen(port, ()=>{
   console.log("Server is running on port number",port);
 })
