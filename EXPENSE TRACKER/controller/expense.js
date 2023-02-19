@@ -115,3 +115,21 @@ exports.deleteExpense=async (req, res, next)=>{
     })
   }
 }
+
+
+exports.loggerFunc=(req, res, next)=>{
+  console.log("Logging")
+  console.log(req.method, req.url)
+  next();
+}
+
+exports.checkAdmin=(req, res, next)=>{
+  const isAdmin=false; //if it is false we cannot use the api where we used checkAdmin
+  // so try with true
+  if(!isAdmin){
+    return res.status(401).json({
+      message:"UNAUTHORIZED ACCESS"
+    })
+  }
+  next();
+}

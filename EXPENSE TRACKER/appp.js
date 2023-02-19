@@ -2,7 +2,8 @@ const express= require('express')
 const bodyParser=require('body-parser')
 const mongoose=require("mongoose")
 
-const {getExpenses, getExpenseId, createExpense,deleteExpense}=require("./controller/expense.js")
+const {getExpenses, getExpenseId, createExpense,
+  deleteExpense,loggerFunc,checkAdmin}=require("./controller/expense.js")
 mongoose.connect("mongodb://127.0.0.1:27017/EXPENSE-TRACKER").then(()=>{
   console.log("connected")
 })
@@ -33,7 +34,7 @@ app.get('/api/v1/health',(req, res)=>{
 
 app.get("/api/v1/expenses", getExpenses)
 app.get("/api/v1/expense/:id",getExpenseId)
-app.post("/api/v1/expenseadd",createExpense)
+app.post("/api/v1/expenseadd",checkAdmin,createExpense)
 app.delete("/api/v1/deleteexpense/:id",deleteExpense)
 app.listen(port, ()=>{
   console.log("Server is running on port number",port);
