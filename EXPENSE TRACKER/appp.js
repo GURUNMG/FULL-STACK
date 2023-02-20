@@ -18,6 +18,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/EXPENSE-TRACKER").then(()=>{
 const app=express()
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
+// app.use(loggerFunc) this is for using loggerfun in all the api
 const port=3000
 
 
