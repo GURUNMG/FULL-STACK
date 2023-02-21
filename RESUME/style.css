@@ -1,0 +1,42 @@
+body{
+  margin:auto
+}
+
+.topnav{
+  overflow:hidden;
+  /* position: fixed; */
+  width: 100%;
+}
+.topnav .elements{
+  background-color: rgb(33, 26, 26);
+ 
+  
+}
+
+.topnav .elements :hover{
+  background-color:rgb(227, 205, 180);
+}
+
+.elements a{
+  text-decoration:none;
+  color:antiquewhite;
+  padding: 2%;
+  display:inline-block;
+  flex-direction: row;
+}
+
+ .elements a:hover{
+  color: rgb(0, 0, 0)
+}
+
+footer{
+  bottom: 0%;
+  position: fixed;
+  background-color: wheat;
+  overflow: hidden ;
+  width: 100%;
+}
+
+footer .profile a img{
+  border-radius: 80%;
+}
