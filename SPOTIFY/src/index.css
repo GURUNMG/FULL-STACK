@@ -16,3 +16,19 @@ body
 #flim-body{
   align-items: center;
 }
+
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 20;
+  bottom: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}

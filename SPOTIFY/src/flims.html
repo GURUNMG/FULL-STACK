@@ -32,7 +32,7 @@
   
   
   
-  <div class="pt-4 grid grid-cols-4 gap-4 pl-2">
+  <div class="pt-4 grid grid-cols-3 gap-4 pl-2">
     <a class="rounded border-2 border-teal-500  py-4 text-center hover:outline outline-offset-2 outline-red-500" href="./index.html">BACK</a>
   </div>
 
@@ -42,21 +42,129 @@
   </div>
 
   <div class="pl-4">
-    <div id="list" class="border-2 border-cyan-300  inline-block">
+    <!-- <div id="list" class="border-2 border-cyan-300  inline-block">
       <p>FLIM LIST</p>
-    </div>
+    </div> -->
     <div>
-      <div class="pl-16 grid grid-cols-4 gap-7 ">
-        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." src="../images/vaathi.jpeg" alt="vaatji img" style="width:240px; height: 220px;">
+      <div class=" grid grid-cols-3 gap-7 ">
+        <!-- <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." src="../images/vaathi.jpeg" alt="vaatji img" style="width:240px; height: 220px;" id="vaathi" onfocus="PlayVaathi()"> -->
         <!-- <img  class="rounded-full" src="../images/play.webp" alt="" height="10px" width="40px"> -->
-        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." src="../images/kgf2.jpeg" alt="vaatji img"  style="width:240px; height:220px;">
-        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."src="../images/varisu.jpeg" alt="vaatji img"  style="width:240px; height:220px;">
-        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."src="../images/thunivu.jpeg" alt="vaatji img"  style="width:240px; height:220px;">
+        <!-- <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." src="../images/kgf2.jpeg" alt="vaatji img"  style="width:240px; height:220px;"> -->
+
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/vaathi.jpeg" style="width:240px; height: 220px;" alt="Default Image">
+          </div>
+          <div class="hoverImg">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/play.webp" alt="Profile Image" onclick="playSound1()">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/pause.webp" alt="Profile Image" onclick="stopSound1()">
+          </div>
+        </div>
+
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/kgf2.jpeg" style="width:240px; height: 220px;" alt="Default Image">
+          </div>
+          <div class="hoverImg">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/play.webp" alt="Profile Image" onclick="playSound2()">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/pause.webp" alt="Profile Image" onclick="stopSound2()">          </div>
+        </div>
+
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/thunivu.jpeg"style="width:240px; height: 220px;"  alt="Default Image">
+          </div>
+          <div class="hoverImg">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/play.webp" alt="Profile Image" onclick="playSound3()">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/pause.webp" alt="Profile Image" onclick="stopSound3()">
+          </div>
+        </div>
+
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/varisu.jpeg" style="width:240px; height: 220px;" alt="Default Image">
+          </div>
+          <div class="hoverImg">
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/play.webp" alt="Profile Image" onclick="playSound4()">
+            <!-- <audio controls id="audio4"><source src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" type="audio/mpeg"></audio> -->
+            <img class="rounded-full" style="width:50px; height:50px;" src="../images/pause.webp" alt="Profile Image" onclick="stopSound4()">
+          </div>
+        </div>
+
+        <!-- <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."src="../images/varisu.jpeg" alt="vaatji img"  style="width:240px; height:220px;"> -->
+        <!-- <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."src="../images/thunivu.jpeg" alt="vaatji img"  style="width:240px; height:220px;"> -->
         <!-- <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." src="../images/kgf2.jpeg" alt="vaatji img"  style="width:240px; height:220px;"> -->
 
       </div>
     </div>
   </div>
+  <h1>AUDIO 1</h1>
+  <audio controls id="audio1"><source src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" type="audio/mpeg"></audio>
+  
+  <h1>AUDIO 2</h1>
+  <audio controls id="audio2"><source src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" type="audio/mpeg"></audio>
 
+  <h1>AUDIO 3</h1>
+  <audio controls id="audio3"><source src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" type="audio/mpeg"></audio>
+
+  <h1>AUDIO 4</h1>
+  <audio controls id="audio4"><source src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" type="audio/mpeg"></audio>
+
+  <!-- <audio  id="yourAudioTag" src="../SONGS/Haiyo-Haiyo-MassTamilan.io.mp3" muted></audio> -->
+  <!-- <img src="../images/kgf2.jpeg" onclick="document.getElementById('yourAudioTag').play();"> -->
+
+  <!-- <a href=""><img src = "../images/kgf2.jpeg" onmouseover="playSound1()"></a> -->
+  <!-- <a href=""><img src = "../images/varisu.jpeg" onmouseover="playSound2()"></a> -->
+
+  
+  <!-- <audio controls id="audio2"><source src="../SONGS/Inayae-MassTamilan.org.mp3" type="audio/mpeg"></audio> -->
+  
+  <!-- <p  style="background-image: url('../images/thunivu.jpeg');">  </p> -->
+
+ 
+  <script>
+      var sound1 = document.getElementById("audio1");
+      var sound2 = document.getElementById("audio2");
+      var sound3 = document.getElementById("audio3");
+      var sound4 = document.getElementById("audio4");
+
+
+      function playSound1() {
+      sound1.play();
+      }
+      function playSound2() {
+      sound2.play();
+      }
+      function playSound3() {
+      sound3.play();
+      }
+      function playSound4() {
+      sound4.play()
+      }
+
+      function stopSound1()
+      {
+        sound1.pause()
+      }
+
+      function stopSound2()
+      {
+        sound2.pause()
+      }
+
+      function stopSound3()
+      {
+        sound3.pause()
+      }
+
+      function stopSound4()
+      {
+        sound4.pause()
+      }
+
+      // function playSound2() {
+      // sound2.play();
+      // }
+  </script>
 </body>
 </html>
