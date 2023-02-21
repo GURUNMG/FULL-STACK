@@ -19,16 +19,17 @@ body
 
 .imageBox {
   position: relative;
-  float: left;
+  /* float: left; */
 }
 
 .imageBox .hoverImg {
   position: relative;
-  left: 20;
-  bottom: 0;
-  display: none;
-}
-
-.imageBox:hover .hoverImg {
+  /* left: 20; */
+  /* bottom: 0; */
   display: inline-flex;
 }
+
+/* fixed button  */
+/* .imageBox:hover .hoverImg {
+  display: none;
+} */
