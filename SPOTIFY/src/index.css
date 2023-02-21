@@ -23,12 +23,12 @@ body
 }
 
 .imageBox .hoverImg {
-  position: absolute;
+  position: relative;
   left: 20;
   bottom: 0;
   display: none;
 }
 
 .imageBox:hover .hoverImg {
-  display: block;
+  display: inline-flex;
 }
