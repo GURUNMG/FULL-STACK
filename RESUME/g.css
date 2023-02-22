@@ -1,0 +1,130 @@
+body{
+  margin:auto
+}
+
+.topnav{
+  overflow:hidden;
+  /* position: fixed; */
+  width: 100%;
+}
+.topnav .elements{
+  background-color: rgb(33, 26, 26);
+ 
+  
+}
+
+.topnav .elements :hover{
+  background-color:rgb(227, 205, 180);
+}
+
+.elements a{
+  text-decoration:none;
+  color:antiquewhite;
+  padding: 2%;
+  display:inline-block;
+  flex-direction: row;
+}
+
+ .elements a:hover{
+  color: rgb(0, 0, 0)
+}
+
+
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+}
+
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+
+.project-card {
+  color: aliceblue; 
+  width: 300px;
+  height: 354px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -15px -15px 30px rgb(60, 60, 60);
+ }
+
+ .project-card > p,ul{
+  font-size: larger;
+  list-style-type:none;
+ }
+
+ #chat,#weather, #bit{
+  width: 300px;
+  height:200px;
+
+ }
+ /* #weather{
+  width: 300px;
+  height:150px;
+
+ } */
+ .skill-top{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 30px;
+ }
+ .projects{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 300px;
+  grid-gap: 10px;
+  padding: 30px;
+ }
+
+
+ /* ul{
+  list-style-type:none;
+ } */
+ 
