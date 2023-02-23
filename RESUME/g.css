@@ -40,7 +40,6 @@ body{
   width:300px;
   border:#ddd;
   border-radius: 100%;
-
 }
 
 .profile-sec {
@@ -49,7 +48,8 @@ body{
 }
 
 .profile-con{
-  padding:5%;
+  padding:2%;
+  font-size:x-large;
 }
 
 
@@ -109,9 +109,9 @@ body{
   width: 300px;
   height: 354px;
   border-radius: 30px;
-  background: #212121;
-  box-shadow: 15px 15px 30px rgb(25, 25, 25),
-              -15px -15px 30px rgb(60, 60, 60);
+  background: #221d20;
+  box-shadow: 15px 15px 30px rgb(234, 156, 156),
+              -15px -15px 30px rgb(234, 232, 245);
  }
 
  .project-card > p,ul{
