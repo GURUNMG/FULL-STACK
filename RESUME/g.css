@@ -117,11 +117,11 @@ body{
 .project-card {
   color: aliceblue; 
   width: 300px;
-  height: 354px;
+  height: 200px;
   border-radius: 30px;
   background: #221d20;
-  box-shadow: 15px 15px 30px rgb(234, 156, 156),
-              -15px -15px 30px rgb(234, 232, 245);
+  /* box-shadow: 15px 15px 30px rgb(234, 156, 156),
+              -15px -15px 30px rgb(234, 232, 245); */
  }
 
  .project-card > p,ul{
@@ -144,12 +144,15 @@ body{
  }
  .projects{
   /* display: flex; */
+
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 100px 300px;
+  grid-template-rows: 100px 100px;
   grid-gap: 10px;
-  padding: 30px;
+  padding-top: 60px;
+  padding-left:30px ;
  }
+
 
 
  /* ul{
@@ -517,3 +520,259 @@ body{
    opacity: 0.4;
   }
  }
+
+ .foot{
+  padding-left:2%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+ }
+
+
+
+ :root {
+  /* --primary-color: #212121; */
+  /* --background-color: #111; */
+  --font: sans-serif;
+}
+
+
+
+body {
+  /* background: var(--background-color); */
+  font-family: var(--font);
+  /* display: flex; */
+  justify-content: center;
+}
+
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Card container */
+.ccard {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.ccard:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.ccard:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.ccard::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.ccard:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.ccard:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.ccard:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.ccard:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.ccard:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.iinfo {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.ttitle {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.ttitle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+/* text right if the card is even  */
+.ccard:nth-child(even) > .iinfo > .ttitle {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.ccard:nth-child(odd) > .iinfo > .ttitle::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.ccard:nth-child(even) > .iinfo > .ttitle::before {
+  right: -45px;
+}
+
+:root {
+  /* --primary-color: #212121; */
+  /* --background-color: #111; */
+  --font: sans-serif;
+}
+
+.cen{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font);
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/* ttimeline Container */
+.ttimeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* ccard container */
+.ccard {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.ccard:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.ccard:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.ccard::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.ccard:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.ccard:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first ccard */
+.ccard:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last ccard  and it's odd */
+.ccard:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last ccard  and it's even */
+.ccard:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* iinformation about the ttimeline */
+.iinfo {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ttitle of the ccard */
+.ttitle {
+  color: orangered;
+  position: relative;
+}
+
+/* ttimeline dot  */
+.ttitle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+/* text right if the ccard is even  */
+.ccard:nth-child(even) > .iinfo > .ttitle {
+  text-align: right;
+}
+.ccard:nth-child(odd) > .iinfo > .ttitle {
+  text-align: left;
+}
+/* setting dot to the left if the ccard is odd */
+.ccard:nth-child(odd) > .iinfo > .ttitle::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the ccard is odd */
+.ccard:nth-child(even) > .iinfo > .ttitle::before {
+  right: -45px;
+}
+
