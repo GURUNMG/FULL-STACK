@@ -315,9 +315,9 @@ body{
   list-style: none;
   height: 120px;
   width: 100%;
-  padding-left: 80px;
+  /* padding-left: 80px; */
   font-family: "Poppins", sans-serif;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .wrapper .icon {
@@ -364,7 +364,7 @@ body{
 }
 
 .wrapper .icon:hover .tooltip {
-  top: -45px;
+  top: -40px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
