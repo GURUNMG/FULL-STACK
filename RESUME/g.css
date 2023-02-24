@@ -19,7 +19,7 @@ body{
 
 .elements a{
   text-decoration:none;
-  color:antiquewhite;
+  color:rgb(215, 250, 220);
   padding: 2%;
   display:inline-block;
   flex-direction: row;
@@ -72,7 +72,7 @@ body{
 }
 
 .header {
-  background-color: #ffcaa6;
+  background-color: #37FF8B;
   color: #100b0b;
   padding: 20px;
   text-align: center;
@@ -104,7 +104,7 @@ body{
 }
 
 .skill-percent {
-  background-color: #ffcaa6;
+  background-color: #37FF8B;
   height: 100%;
 }
 
@@ -211,6 +211,7 @@ body{
  
  /*Button*/
  .card1-button {
+  
   border: 1px solid #252525;
   display: flex;
   padding: .3em;
@@ -411,7 +412,7 @@ body{
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(13, 8, 8, 0.6);
+  --text-stroke-color:white;
   --animation-color: #37FF8B;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -439,7 +440,7 @@ body{
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 10px var(--animation-color))
 }
 
 
@@ -524,141 +525,20 @@ body{
  .foot{
   padding-left:2%;
   padding-top: 10%;
-  padding-bottom: 20%;
+  /* padding-bottom: 20%; */
  }
 
 
-
- :root {
-  /* --primary-color: #212121; */
-  /* --background-color: #111; */
-  --font: sans-serif;
-}
-
-
-
-body {
-  /* background: var(--background-color); */
-  font-family: var(--font);
-  /* display: flex; */
-  justify-content: center;
-}
-
-/* Timeline Container */
-.timeline {
-  background: var(--primary-color);
-  margin: 20px auto;
-  padding: 20px;
-}
-
-/* Card container */
-.ccard {
-  position: relative;
-  max-width: 400px;
-}
-
-/* setting padding based on even or odd */
-.ccard:nth-child(odd) {
-  padding: 30px 0 30px 30px;
-}
-.ccard:nth-child(even) {
-  padding: 30px 30px 30px 0;
-}
-/* Global ::before */
-.ccard::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  border: solid orangered;
-}
-
-/* Setting the border of top, bottom, left */
-.ccard:nth-child(odd)::before {
-  left: 0px;
-  top: -4.5px;
-  bottom: -4.5px;
-  border-width: 5px 0 5px 5px;
-  border-radius: 50px 0 0 50px;
-}
-
-/* Setting the border of top, bottom, right */
-.ccard:nth-child(even)::before {
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-width: 5px 5px 5px 0;
-  border-radius: 0 50px 50px 0;
-}
-
-/* Removing the border if it is the first card */
-.ccard:first-child::before {
-  border-top: 0;
-  border-top-left-radius: 0;
-}
-
-/* Removing the border if it is the last card  and it's odd */
-.ccard:last-child:nth-child(odd)::before {
-  border-bottom: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* Removing the border if it is the last card  and it's even */
-.ccard:last-child:nth-child(even)::before {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* Information about the timeline */
-.iinfo {
-  display: flex;
-  flex-direction: column;
-  background: #333;
-  color: gray;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-/* Title of the card */
-.ttitle {
-  color: orangered;
-  position: relative;
-}
-
-/* Timeline dot  */
-.ttitle::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 999px;
-  border: 3px solid orangered;
-}
-
-/* text right if the card is even  */
-.ccard:nth-child(even) > .iinfo > .ttitle {
-  text-align: right;
-}
-
-/* setting dot to the left if the card is odd */
-.ccard:nth-child(odd) > .iinfo > .ttitle::before {
-  left: -45px;
-}
-
-/* setting dot to the right if the card is odd */
-.ccard:nth-child(even) > .iinfo > .ttitle::before {
-  right: -45px;
-}
-
 :root {
   /* --primary-color: #212121; */
-  /* --background-color: #111; */
+  --background-color: #111;
   --font: sans-serif;
 }
 
 .cen{
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -693,7 +573,7 @@ body {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid orangered;
+  border: solid #37FF8B;
 }
 
 /* Setting the border of top, bottom, left */
@@ -737,14 +617,14 @@ body {
   display: flex;
   flex-direction: column;
   background: #333;
-  color: gray;
+  color: white;
   border-radius: 10px;
   padding: 10px;
 }
 
 /* ttitle of the ccard */
 .ttitle {
-  color: orangered;
+  color:#37FF8B;
   position: relative;
 }
 
@@ -754,9 +634,9 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: white;
+  background:#37FF8B;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid #37FF8B;
 }
 
 /* text right if the ccard is even  */
