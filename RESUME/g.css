@@ -29,7 +29,11 @@ body{
   color: rgb(0, 0, 0)
 }
 
-
+.resume
+{
+  padding-top: 1%;
+  padding-left:8% ;
+}
 .about{
   padding-top:2%;
   padding-left: 2%;
@@ -449,19 +453,23 @@ body{
   display: inline-block;
   position: relative;
   padding: 10px 25px;
-  background-color: #4CC713;
-  color: white;
+  background-color: #37FF8B;;
+  color: rgb(20, 8, 8);
   font-family: sans-serif;
   text-decoration: none;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
+  font-size: large;
   text-align: center;
   text-indent: 15px;
   border: none;
  }
  
  .buttonDownload:hover {
-  background-color: #45a21a;
-  color: white;
+  background-color: #53ec93;
+  /* #649679; */
+  font-size: large;
+  /* color: rgb(20, 8, 8); */
+  color: black
  }
  
  .buttonDownload:before, .buttonDownload:after {
@@ -493,11 +501,11 @@ body{
  }
  
  .buttonDownload:hover:before {
-  border-color: #cdefbd;
+  border-color: #000000;
  }
  
  .buttonDownload:hover:after {
-  border-top-color: #cdefbd;
+  border-top-color: #000000;
   animation-play-state: running;
  }
  
@@ -671,7 +679,7 @@ body {
  }
  
  .cardd-details {
-  color: black;
+  color:  rgb(214, 199, 199);
   height: 100%;
   gap: .5em;
   display: grid;
@@ -695,13 +703,13 @@ body {
  }
  
  .textt-body {
-  color: rgb(134, 134, 134);
+  color: rgb(230, 223, 223);
  }
  
  /*Text*/
  .textt-title {
   color: #eef3f0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
  }
  
