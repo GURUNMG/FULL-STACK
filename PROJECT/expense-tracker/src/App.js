@@ -1,8 +1,14 @@
 import './App.css';
-
+import ExpenseItem from './components/ExpenseItem';
 function App() {
   return (
-    <h1>GURUBHARA N M</h1>
+    <div>
+    <ExpenseItem/>
+    <ExpenseItem/>
+    <ExpenseItem/>
+    <ExpenseItem/>
+    <ExpenseItem/>
+    </div>
   );
 }
 
