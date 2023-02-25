@@ -101,3 +101,6 @@ loginForm.addEventListener('submit',(event)=>{
   console.log(user,password)
 
 })
+
+
+//in javascript the page refresh

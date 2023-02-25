@@ -4,3 +4,51 @@
 /EXPENSE TRACKER/node_modules
 /SPOTIFY/SPOTIFY
 /SPOTIFY/node_modules
+
+/PROJECT/expense-tracker/node_modules
+/PROJECT/expense-tracker/node_modules
+/PROJECT/expense-tracker/.pnp
+/PROJECT/expense-tracker/.pnp.js
+
+# testing
+/PROJECT/expense-tracker/coverage
+
+# production
+/PROJECT/expense-tracker/build
+
+# misc
+/PROJECT/expense-tracker/.DS_Store
+/PROJECT/expense-tracker/.env.local
+/PROJECT/expense-tracker/.env.development.local
+/PROJECT/expense-tracker/.env.test.local
+.env.production.local
+
+/PROJECT/expense-tracker/npm-debug.log*
+/PROJECT/expense-tracker/yarn-debug.log*
+/PROJECT/expense-tracker/yarn-error.log*
+
+
+
+# # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# # dependencies
+# /node_modules
+# /.pnp
+# .pnp.js
+
+# # testing
+# /coverage
+
+# # production
+# /build
+
+# # misc
+# .DS_Store
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
