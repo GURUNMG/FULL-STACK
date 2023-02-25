@@ -60,19 +60,44 @@
 //   itr.innerText=++n;
 //   itr.classList.add('lii')
 // }
-const changeBy=()=>{
-  const ul=document.getElementById('first-ul')
-  const inn=ul.children;
-  let n=0;  
-  for (const itr of inn) {
-    itr.innerText=++n;
-    itr.classList.toggle('lii')
+// const changeBy=()=>{
+//   const ul=document.getElementById('first-ul')
+//   const inn=ul.children;
+//   let n=0;  
+//   for (const itr of inn) {
+//     itr.innerText=++n;
+//     itr.classList.toggle('lii')
     // toggle is used to add the class name when it is not present
     //if the class name is present it will remove it ..
-  }
-}
+//   }
+// }
 
-const btn=document.getElementById('clr');
-btn.addEventListener('click',changeBy)
+// const btn=document.getElementById('clr');
+// btn.addEventListener('click',changeBy)
+// Element.addEventListener(action,callfunction)
 // setInterval(changeBy,1000)
 
+// const user=document.getElementById('USERNAME').value;
+// console.log(user)
+
+// const password=document.getElementById('PASSWORD').value
+// console.log(password)
+
+const btnn=document.getElementById('btn')
+const loginForm=document.getElementById('loginForm')
+console.log(btnn)
+console.log(loginForm)
+
+
+btnn.addEventListener('click',(event)=>{
+  console.log("CALL FROM BUTTON")
+})
+
+loginForm.addEventListener('submit',(event)=>{
+  event.preventDefault();
+  const user=document.getElementById('username').value;
+  const password=document.getElementById('password').value
+
+  console.log(user,password)
+
+})
