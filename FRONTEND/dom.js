@@ -33,12 +33,31 @@
 // for getting the tags used in the HTML file
 // const pTag=document.getElementsByTagName('p')
 // console.log(pTag)
-const li=document.getElementsByTagName('li');
 
-let num=0;
+// const li=document.getElementsByTagName('li');
 
-// for of loop
-for (const itr of li) {
-  itr.innerText=++num;
+// let num=0;
+
+// // for of loop
+// for (const itr of li) {
+//   itr.innerText=++num;
+// }
+// console.log(Array.isArray(li))
+
+// const body=document.getElementsByTagName('body')[0];
+
+//returning all the nodes inside the body including comment
+// console.log(body.childNodes) 
+
+//getting what are the tags inside the element
+// console.log(body.children)
+
+const ul=document.getElementById('first-ul')
+// getting the tags inisde the unordered list..
+  
+const inn=ul.children;
+let n=0;
+for (const itr of inn) {
+  itr.innerText=++n;
+  
 }
-console.log(Array.isArray(li))
