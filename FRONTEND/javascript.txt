@@ -1,0 +1,6 @@
+Infinity, -Infinity, NaN, Float, Number
+(Nan=> not a number)
+typeof(Nan)=>Number;
+
+STRING
+we can use single quotes or double quotes
