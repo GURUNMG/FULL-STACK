@@ -3,11 +3,10 @@ import ExpenseItem from './components/ExpenseItem';
 function App() {
   return (
     <div>
-    <ExpenseItem/>
-    <ExpenseItem/>
-    <ExpenseItem/>
-    <ExpenseItem/>
-    <ExpenseItem/>
+    <ExpenseItem 
+    title={"parking"}
+    amount={10}
+    date={new Date(2023,0,24)} />
     </div>
   );
 }
