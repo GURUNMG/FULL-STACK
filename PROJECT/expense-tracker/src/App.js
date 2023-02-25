@@ -1,6 +1,6 @@
 import './App.css';
 import ExpenseItem from './components/expense-item/ExpenseItem.jsx';
-// import ExpenseDate from './components/expense-date/expenseDate.jsx';
+// import ExpenseDate from './components/expense-date/ExpenseDate.jsx';
 function App() {
   const DUMMY_DATA = [
     {
@@ -25,26 +25,26 @@ function App() {
   ];
   return (
     <div>
-    <ExpenseItem 
-    title={DUMMY_DATA[0].title}
-    amount={DUMMY_DATA[0].amount}
-    date={DUMMY_DATA[0].date} />
+      <ExpenseItem 
+      title={DUMMY_DATA[0].title}
+      amount={DUMMY_DATA[0].amount}
+      date={DUMMY_DATA[0].date} />
 
-<ExpenseItem 
-    title={DUMMY_DATA[1].title}
-    amount={DUMMY_DATA[1].amount}
-    date={DUMMY_DATA[1].date} />
+      <ExpenseItem 
+        title={DUMMY_DATA[1].title}
+        amount={DUMMY_DATA[1].amount}
+        date={DUMMY_DATA[1].date} />
 
-<ExpenseItem 
-    title={DUMMY_DATA[2].title}
-    amount={DUMMY_DATA[2].amount}
-    date={DUMMY_DATA[2].date} />
+      <ExpenseItem 
+        title={DUMMY_DATA[2].title}
+        amount={DUMMY_DATA[2].amount}
+        date={DUMMY_DATA[2].date} />
 
-<ExpenseItem 
-    title={DUMMY_DATA[3].title}
-    amount={DUMMY_DATA[3].amount}
-    date={DUMMY_DATA[3].date} />
-    </div>
+      <ExpenseItem 
+        title={DUMMY_DATA[3].title}
+        amount={DUMMY_DATA[3].amount}
+        date={DUMMY_DATA[3].date} />
+      </div>
   );
 }
 
