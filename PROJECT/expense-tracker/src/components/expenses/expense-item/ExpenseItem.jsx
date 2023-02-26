@@ -6,10 +6,6 @@ const ExpenseItem=(props)=>{
   let {title=" ",
   amount=0,
   date=new Date()}=props;
-  
-  
-  
-
   return (
     <div className="expense-item">
       <ExpenseDate date={date}></ExpenseDate>
