@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import './ExpenseItem.css'
 import ExpenseDate from "../expense-date/ExpenseDate";
 const ExpenseItem=(props)=>{
-  console.log(props)
+  // console.log(props)
   let {
     // title=" ",
   amount=0,
@@ -12,7 +12,7 @@ const ExpenseItem=(props)=>{
   const clicked=()=>{
     setTitle("UPDATED");
   }
-  console.log(title)
+  // console.log(title)
   return (
     <div className="expense-item">
       <ExpenseDate date={date}></ExpenseDate>
